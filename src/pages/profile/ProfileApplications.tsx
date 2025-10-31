@@ -83,7 +83,7 @@ const ProfileApplications = () => {
   return (
     <div className="w-[81.8rem]">
       <FolderTabGroup
-        tabs={tabs.map((tab) => ({ label: tab.label }))}
+        tabs={tabs.map((tab) => ({ id: tab.key, label: tab.label }))}
         activeIndex={tabs.findIndex((tab) => tab.key === activeKey)}
         onTabChange={(idx) => setActiveKey(tabs[idx].key)}
       />
